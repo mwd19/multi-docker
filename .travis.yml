@@ -13,7 +13,7 @@ after_success:
   - docker build -t wano19/multi-nginx ./nginx
   - docker build -t wano19/multi-server ./server
   - docker build -t wano19/multi-worker ./worker
-  # Log in to the docker CLI
+  # Log in to the docker CLI ghfghfhfhf
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to docker hub
   - docker push wano19/multi-client
